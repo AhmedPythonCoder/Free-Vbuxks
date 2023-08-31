@@ -1,0 +1,162 @@
+.the-h1 {
+    outline: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 999;
+    padding-bottom: 20vh;
+}
+
+.container-with-z-index {
+    position: relative;
+    z-index: 1; /* Adjust the z-index as needed */
+}
+
+
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #00ff9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #222;
+    border-radius: 16px;
+    padding: 60px;
+    box-shadow: 0 12px 30px rgba(0, 255, 157, 0.5);
+    text-align: center;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 18px 48px;
+    background: linear-gradient(135deg, #00ff9d, #ff00cc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.4s, background 0.4s;
+    letter-spacing: 3px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.download-link:hover {
+    transform: scale(1.08);
+    border: 2px solid #00ff9d;
+}
+
+#usernameInput {
+    display: none;
+    margin-top: 30px;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+input[type="text"] {
+    padding: 14px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    background: #222;
+    color: #00ff9d;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 2px solid #00ff9d;
+}
+
+button {
+    background: linear-gradient(135deg, #00ff9d, #ff00cc);
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: #222;
+    z-index: 999; /* Ensure it's on top of other content */
+}
+
+.tiktok-tab {
+    text-decoration: none;
+    color: #00ff9d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.tiktok-tab:hover {
+    color: #ff00cc;
+}
+
+.tiktok-tab {
+    text-decoration: none;
+    color: #00ff9d;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: 5px; /* Move 5 pixels down */
+    margin-left: 5px; /* Move 5 pixels to the right */
+}
+
+.tiktok-tab:hover {
+    color: #ff00cc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+    outline-color: #f4f4f4;
+}
+
+p {
+    font-size: 18px;
+    color: #555
+
+}
+
+

